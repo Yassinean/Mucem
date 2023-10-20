@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inknut Antiqua", "Helvetica Neue";
+}
+
+.active {
+  color: #cee7e6;
+  border-bottom: 2px solid #cee7e6;
+}
+/*---- Start header ----*/
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #f6f3ee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: 30px;
+  color: #914040;
+  font-weight: 500;
+  font-size: 16px;
+  transition-duration: 1s;
+}
+
+nav ul li a:hover {
+  color: #cee7e6;
+}
+
+nav ul li .active:hover {
+  color: #cee7e6;
+  transition-duration: 0.5s;
+}
+
+/*---- End header ----*/
+
+/*---- First section ----*/
+.Sect1 {
+  height: 90vh;
+  background-color: #f6f3ee;
+}
+
+.Sect1 .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Sect1 .content .titpar {
+  display: grid;
+  width: 40%;
+  gap: 2rem;
+}
+
+.Sect1 .content .titpar h3 {
+  font-size: 48px;
+  line-height: 64px;
+  padding-bottom: 5%;
+}
+
+.Sect1 .content .titpar p {
+  color: #914040;
+  line-height: 24px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn1 {
+  background-color: #914040;
+  color: #fff;
+  width: 262.819px;
+  height: 58.404px;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  border: 1px solid #914040;
+  color: #914040;
+  transition-duration: 1s;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50px;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+/* -- Media Query First Section ----*/
+/* @media only screen and (max-width: 575px) {
+  /* Styles for phones (up to 575px wide) 
+} */
+
+/* Small Devices (Tablets)
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+} */
+
+/*-- End Media Query First Section ----*/
+
+/*---- End First Section ---- */
+
+/*---- Second Section ----*/
+.Sect2 {
+  height: 100vh;
+  background: #cee7e6;
+}
+
+.Sect2 h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+}
+
+.Sect2 .artist {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Sect2 .artist .art_producter {
+  background-color: #fff;
+  width: 280px;
+  height: 380px;
+  border-radius: 8px;
+}
+
+.Sect2 .artist .art_producter img {
+  width: 240px;
+  height: 189px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.Sect2 .artist .art_producter p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #a46666;
+}
+
+/*---- End Second Section ----*/
+
+/*---- Third Section ----*/
+
+.Sect3 {
+  height: 130vh;
+}
+
+.Sect3 h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #cee7e6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.grid-product > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-product > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-product {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  margin: 20px;
+}
+
+.grid-product .wide {
+  grid-column: span 2;
+}
+
+.grid-product .tall {
+  grid-row: span 2;
+}
+
+.grid-product .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-product .big-tall {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+/*---- End Third Section ----*/
+/*---- Fourth Section ----*/
+
+.Sect4 {
+  height: 60vh;
+  background-color: #f6f3ee;
+}
+
+.Sect4 h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #914040;
+}
+
+.Sect4 .contentAtelier {
+  display: flex;
+}
+
+.Sect4 .titparAtelier h4 {
+  width: 50%;
+  font-size: 48px;
+  line-height: 56px;
+  padding-bottom: 2%;
+}
+
+.Sect4 .titparAtelier p {
+  width: 45%;
+  line-height: 1.5rem;
+}
+
+.Sect4 .titparAtelier img {
+
+} 
