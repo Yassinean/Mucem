@@ -48,7 +48,7 @@ nav ul li .active:hover {
 }
 
 /*---- End header ----*/
-
+/*---------------------------------------- Page Accueil --------------------------------*/
 /*---- First section ----*/
 .Sect1 {
   height: 90vh;
@@ -92,6 +92,15 @@ nav ul li .active:hover {
   border-radius: 15px;
 }
 
+.btn .btn1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn .btn1 a:hover {
+  color: #914040;
+}
+
 .btn1:hover {
   background-color: transparent;
   border: 1px solid #914040;
@@ -99,38 +108,9 @@ nav ul li .active:hover {
   transition-duration: 1s;
 }
 
-.open-menu,
-.close-menu {
-  position: absolute;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: none;
-}
-
-.open-menu {
-  top: 50px;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-.close-menu {
-  top: 20px;
-  right: 20px;
-}
-
-#check {
-  display: none;
-}
 
 /* -- Media Query First Section ----*/
-/* @media only screen and (max-width: 575px) {
-  /* Styles for phones (up to 575px wide) 
-} */
 
-/* Small Devices (Tablets)
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-} */
 
 /*-- End Media Query First Section ----*/
 
@@ -214,7 +194,7 @@ img {
 .grid-product {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   margin: 20px;
@@ -240,10 +220,9 @@ img {
 
 /*---- End Third Section ----*/
 /*---- Fourth Section ----*/
-
 .Sect4 {
-  height: 60vh;
-  background-color: #f6f3ee;
+  height: 90vh;
+  background: #f6f3ee;
 }
 
 .Sect4 h3 {
@@ -254,20 +233,410 @@ img {
 
 .Sect4 .contentAtelier {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.Sect4 .titparAtelier h4 {
-  width: 50%;
+.Sect4 .contentAtelier .titparAtelier {
+  display: grid;
+  width: 40%;
+  gap: 2rem;
+}
+
+.Sect4 .contentAtelier .titparAtelier h4 {
+  font-size: 48px;
+  line-height: 64px;
+  padding-bottom: 5%;
+}
+.Sect4 .contentAtelier .titparAtelier p {
+  color: #000;
+  line-height: 24px;
+  width: 80%;
+}
+
+.Sect4 .contentAtelier div img {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+}
+
+/*---- FAQ ---- */
+.faq {
+  height: 80vh;
+  width: 100%;
+}
+.faq h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+}
+.accordion {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion li {
+  background: #d9d9d9;
+  list-style: none;
+  width: 80%;
+  padding: 15px;
+  margin: 5%;
+}
+.accordion li label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 5px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+}
+.accordion li label::after {
+  content: ">";
+  margin-right: 10px;
+  font-size: 32px;
+  font-weight: 600;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.accordion .content {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s, padding 0.5s;
+}
+
+.accordion input[type="checkbox"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.accordion input[type="checkbox"]:checked + label::after {
+  content: "^";
+}
+
+/*---- End FAQ ----*/
+/*---------------------------------------- End Page Accueil --------------------------------*/
+/*---------------------------------------- Page Atelier --------------------------------*/
+.Sect1Atelier {
+  height: 90vh;
+  background-color: #f6f3ee;
+}
+
+.Sect1Atelier .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Sect1Atelier .content .titpar {
+  margin-top: 5%;
+  display: flex;
+  width: 40%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.Sect1Atelier .content .titpar h3 {
   font-size: 48px;
   line-height: 56px;
-  padding-bottom: 2%;
 }
 
-.Sect4 .titparAtelier p {
-  width: 45%;
-  line-height: 1.5rem;
+.Sect1Atelier .content .titpar p {
+  color: #000;
+  line-height: 24px;
+}
+.Sect1Atelier .content .titpar .dateHeure {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
 }
 
-.Sect4 .titparAtelier img {
+.Sect1Atelier .content .titpar .dateHeure .date,
+.heure,
+.assite h4 {
+  color: #99c0dc;
+}
+
+.Sect1Atelier .content .titpar .dateHeure .sep {
+  height: 100px;
+  border: 3px solid #99c0dc
+}
+
+.Sect1Atelier .content .tswira {
+  width: 30%;
+  height: auto;
+}
+
+.Sect1Atelier .content .tswira img {
+  width: 100%;
+  height: 100%;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*---------------------------------------- End Page Atelier --------------------------------*/
+
+/*---------------------------------------- Page Galerie --------------------------------*/
+.Sect1Galerie {
+  background-image: url(/images/wall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.Sect1Galerie h3 {
+  font-size: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 35%;
+}
+
+.Sect2Galerie h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #914040;
+}
+
+.Sect2Galerie .grid-product > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sect2Galerie .grid-product > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Sect2Galerie .grid-product {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  margin: 20px;
+}
+
+.Sect2Galerie .grid-product .wide {
+  grid-column: span 2;
+}
+
+.Sect2Galerie .grid-product .tall {
+  grid-row: span 2;
+}
+
+.Sect2Galerie .grid-product .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.Sect2Galerie .grid-product .big-tall {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 20px;
+}
+
+/*---------------------------------------- End Page Galerie --------------------------------*/
+/*----  footer ----*/
+.foot {
+  height: 50vh;
+  background: #a46666;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+
+.foot div img {
+  width: 50%;
+}
+
+.foot div ul li {
+  list-style: none;
+}
+
+.foot div ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot .social-media {
+  color: #fff;
+  height: 125px;
+  width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.foot .social-media .icon {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  font-size:  24px;
+}
+
+.foot .sponsor {
+  color: #fff;
+  height: 125px;
+}
+
+/*------ Media Query footer ------*/
+ @media only screen and (max-width: 575px) {
+  /* Styles for phones (up to 575px wide) */
+  .Sect1Atelier .content {
+    display: block;
+    padding-top: 5%;
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+  }
+  .Sect1Atelier .content .titpar h3 {
+    font-size: 32px;
+  }
+  .Sect1Atelier .content .titpar p {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .Sect1Atelier .content .titpar .dateHeure {
+    width: 100%;
+    display: flex;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date {
+    font-size: ;
+  }
+  /* .Sect1Atelier .content .titpar .dateHeure .date */
+  .Sect1Atelier .content .tswira {
+  }
+
+
+
+  .foot{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
 
 } 
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+} 
+/*------ End Media Query fr ------*/
+
+/*---- End footer ----*/
+/*---- form ----*/
+form {
+  padding: 25px;
+  margin: 25px 0;
+  background: #f6f3ee;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);  
+}
+.formulaire h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+  color: #914040;
+}
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+  color: #914040;
+}
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  border-radius: 3px;
+  border: none;
+}
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+form input.error,
+form select.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+.submit-btn {
+  margin-top: 30px;
+}
+.submit-btn input {
+  color: white;
+  border: none;
+  height: auto;
+  font-size: 16px;
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: #914040;
+  transition: 0.2s ease;
+}
+.submit-btn input:hover {
+  color: #914040;
+  border: 1px solid #914040;
+  background-color: transparent;
+}
+/*---- End form ----*/

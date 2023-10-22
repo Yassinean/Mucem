@@ -4,32 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/7ec32a8049.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Accueil</title>
   </head>
   <body>
     <header>
-      <img src="images/logo1.png" alt="logo" />
+      <div>
+        <img src="images/logo1.png" alt="logo" />
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <nav>
         <ul>
           <li><a class="active" href="">Accueil</a></li>
-          <li><a href="">Galerie</a></li>
-          <li><a href="">Atelier</a></li>
-          <li>
-            <label for="check" class="close-menu"
-              ><i class="fas fa-times"></i
-            ></label>
-          </li>
-          <label for="check" class="open-menu"
-            ><i class="fas fa-bars"></i
-          ></label>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="atelier.html">Atelier</a></li>
         </ul>
       </nav>
     </header>
-
     <section class="Sect1">
       <div class="content">
         <div class="titpar">
@@ -44,7 +42,7 @@
         </div>
       </div>
       <div class="btn">
-        <button class="btn1">En savoir plus</button>
+        <button class="btn1"><a href="">En savoir plus</a></button>
       </div>
     </section>
     <section class="Sect2">
@@ -114,27 +112,99 @@
           </p>
         </div>
         <div>
-            <img src="/images/eid-coffee_187299-8575-removebg-preview-min.png" alt="" />
+          <img
+            src="/images/eid-coffee_187299-8575-removebg-preview-min.png"
+            alt=""
+          />
         </div>
       </div>
-      <div></div>
-      <button>Plus d'information</button>
-    </section>
-    <section class="Sect5">
-      <h3>FAQ</h3>
-      <div class="question">
-        <div>q1</div>
-        <div>q2</div>
-        <div>q3</div>
-        <div>q4</div>
-        <div>imgq</div>
+      <div class="btn">
+        <button class="btn1">
+          <a href="atelier.html">Plus d'information</a>
+        </button>
       </div>
     </section>
-    <footer>
-      <div>logo</div>
-      <div>menu</div>
-      <div>social media</div>
-      <div>sponsor</div>
+    <!-- <section class="Sect5">
+      <h3>FAQ</h3> -->
+    <section class="faq">
+      <h3>FAQ</h3>
+      <div class="accordion">
+        <div class="question">
+          <ul>
+            <li>
+              <input type="checkbox" name="accordion" id="frist" />
+              <label for="frist">Quel est l’art de la poterie au Maroc ?</label>
+              <div class="content">
+                <p>
+                  l’art de la poterie existe depuis maintenant plus de 1000 ans
+                  avec l’arrivée des Faures qui ont apporté les fours à Fès,
+                  Meknès, Safi et Marrakech.
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="accordion" id="second" />
+              <label for="second">Qu'est-ce que la poterie marocaine ?</label>
+              <div class="content">
+                <p>
+                  La poterie est un véritable art de vivre qui se transmets de
+                  génération en génération
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="accordion" id="third" />
+              <label for="third">Types de poterie marocaine ?</label>
+              <div class="content">
+                <p>
+                  On peut trouver, de très jolis plats à tajine, des bols, des
+                  tasses, des assiettes, des saladiers, mais aussi, des carreaux
+                  de carrelage
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="accordion" id="fourth" />
+              <label for="fourth">Prix</label>
+              <div class="content">
+                <ul>
+                  <li>20 Dh pour les adultes</li>
+                  <li>5 Dh pour les enfants</li>
+                  <li>10 Dh pour les étudiants.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="img">
+          <img src="images/FAQ.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- </section> -->
+    <footer class="foot">
+      <div>
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Galerie</a></li>
+          <li><a href="">Atelier</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <p>Retrouvez-nous</p>
+        <div class="icon">
+          <p><i class="fa-regular fa-envelope"></i></p>
+          <p><i class="fa-brands fa-facebook-f"></i></p>
+          <p><i class="fa-brands fa-twitter"></i></p>
+        </div>
+      </div>
+      <div class="sponsor">
+        <p>Sponsorisé par :</p>
+        <img src="images/wizara.png" alt="" />
+      </div>
     </footer>
   </body>
 </html>

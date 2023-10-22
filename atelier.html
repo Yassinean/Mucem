@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7ec32a8049.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Atelier</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo1.png" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a class="active" href="atelier.html">Atelier</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Sect1Atelier">
+      <div class="content">
+        <div class="titpar">
+          <h3>Fabriquées artisanalement</h3>
+          <p>
+            Chaque pièce contient un fragment de l'histoire personnelle de son
+            créateur, un morceau de ses émotions les plus intimes.
+          </p>
+          <div class="dateHeure">
+            <div class="date">
+              <h4>Date :</h4>
+              <p>De : 24 Nov 2023</p>
+              <p>Â : 30 Dec 2023</p>
+            </div>
+            <div class="sep"></div>
+            <div class="heure">
+              <h4>Heure :</h4>
+              <p>De : 9h00</p>
+              <p>Â : 18h00</p>
+            </div>
+            <div class="assite">
+              <h4>Assisté par :</h4>
+              <p>Serghini</p>
+            </div>
+          </div>
+        </div>
+        <div class="tswira">
+          <img
+            src="images/eid-coffee_187299-8575-removebg-preview-min.png"
+            alt="premierPoterie"
+          />
+        </div>
+      </div>
+      <div class="btn">
+        <button class="btn1"><a href="#Reserver">S'inscrire !</a></button>
+      </div>
+    </div>
+    <section class="formulaire">
+      <h2>Réserver Vos Tickets</h2>
+      <form action="thank-you.html">
+      <div class="form-group fullname">
+        <label for="fullname">Votre Nom et Prénom</label>
+        <input type="text" id="fullname">
+      </div>
+      <div class="form-group email">
+        <label for="email">Votre Address Email</label>
+        <input type="text" id="email">
+      </div>
+      <div class="form-group password">
+        <label for="password">Votre CIN (Carte National)</label>
+        <input type="text" id="password">
+      </div>
+      <div class="form-group date">
+        <label for="date">Birth Date</label>
+        <input type="date" id="date">
+      </div>
+      <div class="form-group gender">
+        <label for="gender">Profile</label>
+        <select id="gender">
+          <option value="" selected disabled>Selectionez Votre Profile</option>
+          <option value="Male">Etudiant</option>
+          <option value="Female">Adulte</option>
+          <option value="Other">Enfant</option>
+        </select>
+      </div>
+      <div class="form-group submit-btn">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    </section>
+    <footer class="foot">
+      <div>
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Galerie</a></li>
+          <li><a href="">Atelier</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <p>Retrouvez-nous</p>
+        <div class="icon">
+          <i class="fa-regular fa-envelope"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="sponsor">
+        <p>Sponsorisé par :</p>
+        <img src="images/wizara.png" alt="" />
+      </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
