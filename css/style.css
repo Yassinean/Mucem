@@ -529,7 +529,8 @@ input[type="checkbox"] {
     display: flex;
   }
   .Sect1Atelier .content .titpar .dateHeure .date {
-    font-size: ;
+    font-size: 16px;
+    
   }
   /* .Sect1Atelier .content .titpar .dateHeure .date */
   .Sect1Atelier .content .tswira {
