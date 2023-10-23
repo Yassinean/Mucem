@@ -91,7 +91,7 @@ header .image img {
     right: 0;
     width: 100vw;
     background: #f6f3ee;
-    transition: 0.2s;
+    transition: 0.25s;
     overflow: hidden;
   }
   .nav-bar.active {
