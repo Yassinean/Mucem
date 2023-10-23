@@ -7,7 +7,6 @@
 }
 
 .activ {
-  color: #cee7e6;
   border-bottom: 2px solid #cee7e6;
 }
 /*---- Start header ----*/
@@ -30,13 +29,12 @@ header .image img {
   display: none;
 }
 
-
 .nav-bar ul {
   display: flex;
 }
 
 .nav-bar ul li {
-  list-style: none; 
+  list-style: none;
 }
 
 .nav-bar ul li a {
@@ -59,22 +57,22 @@ header .image img {
   transition-duration: 0.5s;
 }
 /*-- Media Queries header --*/
-@media only screen and (max-width: 1320px){
+@media only screen and (max-width: 1320px) {
   header {
     padding: 0 50px;
   }
 }
-@media only screen and (max-width: 1320px){
+@media only screen and (max-width: 1320px) {
   header {
     padding: 0 50px;
   }
 }
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px) {
   header {
     padding: 0 30px;
   }
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 767px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -176,10 +174,6 @@ header .image img {
   transition-duration: 1s;
 }
 
-
-/* -- Media Query First Section ----*/
-
-
 /*-- End Media Query First Section ----*/
 
 /*---- End First Section ---- */
@@ -200,9 +194,9 @@ header .image img {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   justify-content: space-evenly;
   align-items: center;
+  gap: 20px;
 }
 
 .Sect2 .artist .art_producter {
@@ -435,7 +429,7 @@ input[type="checkbox"] {
 
 .Sect1Atelier .content .titpar .dateHeure .sep {
   height: 100px;
-  border: 3px solid #99c0dc
+  border: 3px solid #99c0dc;
 }
 
 .Sect1Atelier .content .tswira {
@@ -563,7 +557,7 @@ input[type="checkbox"] {
   width: 140px;
   display: flex;
   justify-content: space-between;
-  font-size:  24px;
+  font-size: 24px;
 }
 
 .foot .sponsor {
@@ -573,74 +567,10 @@ input[type="checkbox"] {
 
 .foot .sponsor p {
   width: 150px;
-  
 }
 
 /*------ Media Query footer ------*/
 /* Styles for phones (up to 575px wide) */
- @media only screen and (max-width: 575px) {
-  .Sect1Atelier .content {
-    display: block;
-    padding-top: 5%;
-    width: 100%;
-  }
-  .Sect1Atelier .content .titpar {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 24px;
-    width: 85%;
-  }
-  .Sect1Atelier .content .titpar h3 {
-    font-size: 32px;
-  }
-  .Sect1Atelier .content .titpar p {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-  }
-  .Sect1Atelier .content .titpar .dateHeure {
-    width: 100%;
-    display: flex;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .date>p {
-    font-size: 12px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .heure>p {
-    font-size: 12px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .assite>p {
-    font-size: 12px;
-  }
-  .Sect1Atelier .content .tswira {
-    display: none;
-  }
-  .Sect1Atelier .btn {  
-    justify-content: end;
-    height: 140px;
-    align-items: flex-end;
-    margin-right: 35px;
-  }
-  .Sect1Atelier .btn .btn1 {
-    font-size: 12px;
-    width: 180px;
-  }
-
-
-  .foot{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-} 
-
-/* Small Devices (Tablets) */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-} 
-/*------ End Media Query fr ------*/
 
 /*---- End footer ----*/
 /*---- form ----*/
@@ -651,7 +581,7 @@ form {
   max-width: 500px;
   width: 100%;
   border-radius: 7px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);  
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
 }
 .formulaire h2 {
   font-size: 27px;
@@ -729,3 +659,169 @@ form .password i {
   background-color: transparent;
 }
 /*---- End form ----*/
+
+/* -- Media Query First Section ----*/
+@media (max-width: 767px) {
+  .Sect1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Sect1 .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Sect1 .content img {
+    width: 211px;
+    padding-top: 57%;
+  }
+  .Sect1 .content .titpar h3 {
+    position: relative;
+    top: 3.3rem;
+    width: 256px;
+    height: 102px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .Sect1 .content .titpar p {
+    position: relative;
+    top: 4rem;
+    width: 256px;
+    height: 94px;
+    text-align: justify;
+    font-size: 12px;
+  }
+  .btn {
+    display: flex;
+    justify-content: start;
+    padding: 50px 75px;
+  }
+  /*-- Media Query Second Section ----*/
+  .Sect2 {
+    height: 120vh;
+    background: #cee7e6;
+    width: 100%;
+  }
+  .Sect2 .artist .art_producter {
+    background-color: #fff;
+    width: 225px;
+    height: 270px;
+    gap: 50px;
+    border-radius: 8px;
+  }
+  .Sect2 .artist .art_producter p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #a46666;
+  }
+  .Sect2 .artist .art_producter img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    width: 86%;
+    height: 39%;
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 8px;
+  }
+  /*-- End Media Query Second Section --*/
+  /*-- Media Query Third Section --*/
+  .Sect3 {
+    height: 300vh;
+  }
+  /*-- End Media Query Third Section --*/
+  /*-- Media Query fourth Section --*/
+  .Sect4 {
+    height: 80vh;
+  }
+  .Sect4 .contentAtelier {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Sect4 .contentAtelier .tswira img {
+    width: 300px;
+  }
+  .Sect4 .contentAtelier .titparAtelier h4 {
+    position: relative;
+    top: 3rem;
+    width: 256px;
+    height: 102px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .Sect4 .contentAtelier .titparAtelier p {
+    width: 256px;
+    height: 94px;
+    text-align: justify;
+    font-size: 12px;
+  }
+  /*-- Media Query fourth Section --*/
+
+  /*-- End Media Query Second Section ----*/
+}
+@media only screen and (max-width: 575px) {
+  .Sect1Atelier .content {
+    display: block;
+    padding-top: 5%;
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 85%;
+  }
+  .Sect1Atelier .content .titpar h3 {
+    font-size: 32px;
+  }
+  .Sect1Atelier .content .titpar p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .Sect1Atelier .content .titpar .dateHeure {
+    width: 100%;
+    display: flex;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date > p {
+    font-size: 12px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure > p {
+    font-size: 12px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite > p {
+    font-size: 12px;
+  }
+  .Sect1Atelier .content .tswira {
+    display: none;
+  }
+  .Sect1Atelier .btn {
+    justify-content: end;
+    height: 140px;
+    align-items: flex-end;
+    margin-right: 35px;
+  }
+  .Sect1Atelier .btn .btn1 {
+    font-size: 12px;
+    width: 180px;
+  }
+
+  .foot {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+/*------ End Media Query fr ------*/
