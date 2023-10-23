@@ -57,63 +57,7 @@ header .image img {
   transition-duration: 0.5s;
 }
 /*-- Media Queries header --*/
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #000000;
-    margin: 6px 0;
-  }
-  .nav-bar {
-    height: 0;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: #f6f3ee;
-    transition: 0.25s;
-    overflow: hidden;
-  }
-  .nav-bar.active {
-    height: 50%;
-    width: 100%;
-    z-index: 1;
-  }
-  nav ul .active {
-    height: 450px;
-  }
-  .nav-bar ul {
-    display: block;
-    /* width: fit-content; */
-    margin: 0px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  .nav-bar.active ul {
-    opacity: 1;
-  }
-}
+
 /*---- End header ----*/
 /*---------------------------------------- Page Accueil --------------------------------*/
 /*---- First section ----*/
@@ -453,7 +397,7 @@ input[type="checkbox"] {
 
 /*---------------------------------------- Page Galerie --------------------------------*/
 .Sect1Galerie {
-  background-image: url(../images/wall.jpg);
+  background-image: url(/images/wall.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -461,11 +405,11 @@ input[type="checkbox"] {
 }
 
 .Sect1Galerie h3 {
-  font-size: 200px;
+  font-size: 100px;
   position: relative;
   display: flex;
   justify-content: center;
-  top: 20%;
+  top: 32%;
 }
 
 .Sect2Galerie h3 {
@@ -825,5 +769,62 @@ form .password i {
 
 /* Small Devices (Tablets) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #f6f3ee;
+    transition: 0.25s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+  }
+  nav ul .active {
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    /* width: fit-content; */
+    margin: 0px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
 }
 /*------ End Media Query fr ------*/
