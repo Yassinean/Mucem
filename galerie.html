@@ -12,20 +12,19 @@
   </head>
   <body>
     <header>
-      <img src="images/logo1.png" alt="logo" />
-      <nav>
+      <div class="image">
+        <img src="images/logo1.png" alt="logo" />
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a class="active" href="galerie.html">Galerie</a></li>
+          <li><a class="activ" href="galerie.html">Galerie</a></li>
           <li><a href="atelier.html">Atelier</a></li>
-          <li>
-            <label for="check" class="close-menu"
-              ><i class="fas fa-times"></i
-            ></label>
-          </li>
-          <label for="check" class="open-menu"
-            ><i class="fas fa-bars"></i
-          ></label>
         </ul>
       </nav>
     </header>
@@ -113,9 +112,9 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Galerie</a></li>
-            <li><a href="">Atelier</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="atelier.html">Atelier</a></li>
           </ul>
         </div>
         <div class="social-media">
@@ -131,5 +130,8 @@
           <img src="images/wizara.png" alt="" />
         </div>
       </footer>
+
+
+      <script src="js/burger.js"></script>
   </body>
 </html>

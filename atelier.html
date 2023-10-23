@@ -13,12 +13,19 @@
   </head>
   <body>
     <header>
-      <img src="images/logo1.png" alt="logo" />
-      <nav>
+      <div class="image">
+        <img src="images/logo1.png" alt="logo" />
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
         <ul>
-          <li><a href="index.html">Accueil</a></li>
+          <li><a href="">Accueil</a></li>
           <li><a href="galerie.html">Galerie</a></li>
-          <li><a class="active" href="atelier.html">Atelier</a></li>
+          <li><a class="activ" href="atelier.html">Atelier</a></li>
         </ul>
       </nav>
     </header>
@@ -42,6 +49,7 @@
               <p>De : 9h00</p>
               <p>Â : 18h00</p>
             </div>
+            <div class="sep"></div>
             <div class="assite">
               <h4>Assisté par :</h4>
               <p>Serghini</p>
@@ -99,9 +107,9 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="">Accueil</a></li>
-          <li><a href="">Galerie</a></li>
-          <li><a href="">Atelier</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="atelier.html">Atelier</a></li>
         </ul>
       </div>
       <div class="social-media">
@@ -119,6 +127,6 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>
