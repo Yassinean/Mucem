@@ -97,6 +97,7 @@ header .image img {
   .nav-bar.active {
     height: 50%;
     width: 100%;
+    z-index: 1;
   }
   nav ul .active {
     height: 450px;
@@ -736,6 +737,7 @@ form .password i {
   /*-- End Media Query Third Section --*/
   /*-- Media Query fourth Section --*/
   .Sect4 {
+    margin-top: 10%;
     height: 80vh;
   }
   .Sect4 .contentAtelier {
