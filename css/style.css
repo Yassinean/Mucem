@@ -396,7 +396,7 @@ header .image img {
 
 /*---------------------------------------- Page Galerie --------------------------------*/
 .Sect1Galerie {
-  background-image: url(/images/wall.jpg);
+  background-image: url(../images/wall.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
