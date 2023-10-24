@@ -602,6 +602,46 @@ form .password i {
 /* -- Media Query First Section ----*/
 
 @media only screen and (max-width: 575px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #f6f3ee;
+    transition: 0.25s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+  }
+  nav ul .active {
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    /* width: fit-content; */
+    margin: 0px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
   .Sect1 .content .titpar h3 {
     position: relative;
     top: 3.3rem;
@@ -669,6 +709,23 @@ form .password i {
 
 /* Small Devices (Tablets) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -829,23 +886,7 @@ form .password i {
     align-items: center;
     justify-content: space-around;
   }
-}
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}
-@media only screen and (max-width: 767px) {
+
   /*-- Media Query fourth Section --*/
 
   /*-- End Media Query Second Section ----*/
