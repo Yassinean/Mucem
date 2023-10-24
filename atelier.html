@@ -69,41 +69,40 @@
     </div>
     <section class="formulaire">
       <h2>Réserver Vos Tickets</h2>
-      <form action="thank-you.html">
       <div class="form-group fullname">
-        <label for="fullname">Votre Nom et Prénom</label>
-        <input type="text" id="fullname">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name">
       </div>
       <div class="form-group email">
-        <label for="email">Votre Address Email</label>
-        <input type="text" id="email">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="Enter your email address">
       </div>
       <div class="form-group password">
-        <label for="password">Votre CIN (Carte National)</label>
-        <input type="text" id="password">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
       </div>
       <div class="form-group date">
         <label for="date">Birth Date</label>
-        <input type="date" id="date">
+        <input type="date" id="date" placeholder="Select your date">
       </div>
       <div class="form-group gender">
-        <label for="gender">Profile</label>
+        <label for="gender">Gender</label>
         <select id="gender">
-          <option value="" selected disabled>Selectionez Votre Profile</option>
-          <option value="Male">Etudiant</option>
-          <option value="Female">Adulte</option>
-          <option value="Other">Enfant</option>
+          <option value="" selected disabled>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
         </select>
       </div>
       <div class="form-group submit-btn">
         <input type="submit" value="Submit">
       </div>
     </form>
-
     </section>
     <footer class="foot">
       <div>
-        <img src="images/logo.png" alt="logo" />
+        <a href="index.html"><img src="images/logo.png" width="70%" alt="logo" /></a>
       </div>
       <div class="menu">
         <ul>
@@ -115,14 +114,14 @@
       <div class="social-media">
         <p>Retrouvez-nous</p>
         <div class="icon">
-          <i class="fa-regular fa-envelope"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
+          <p><i class="fa-regular fa-envelope"></i></p>
+          <p><i class="fa-brands fa-facebook-f"></i></p>
+          <p><i class="fa-brands fa-twitter"></i></p>
         </div>
       </div>
       <div class="sponsor">
         <p>Sponsorisé par :</p>
-        <img src="images/wizara.png" alt="" />
+        <img src="images/wizara.png" width="70%" alt="" />
       </div>
     </footer>
 
