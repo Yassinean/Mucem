@@ -642,61 +642,156 @@ form .password i {
   .nav-bar.active ul {
     opacity: 1;
   }
-  .Sect1 .content .titpar h3 {
-    position: relative;
-    top: 3.3rem;
-    width: 256px;
-    height: 126px;
-    font-size: 22px;
-    line-height: 32px;
+  /* Start Section 1 */
+  .Sect1 {
+    height: 50vh;
   }
-  .Sect1Atelier .content {
-    display: block;
-    padding-top: 5%;
-    width: 100%;
-  }
-  .Sect1Atelier .content .titpar {
+  .Sect1 .content {
     display: flex;
     justify-content: flex-start;
     margin-left: 24px;
-    width: 85%;
-  }
-  .Sect1Atelier .content .titpar h3 {
-    font-size: 32px;
-  }
-  .Sect1Atelier .content .titpar p {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-  }
-  .Sect1Atelier .content .titpar .dateHeure {
     width: 100%;
-    display: flex;
   }
-  .Sect1Atelier .content .titpar .dateHeure .date > p {
-    font-size: 12px;
+  .Sect1 .content .titpar {
+    width: 50%;
   }
-  .Sect1Atelier .content .titpar .dateHeure .heure > p {
-    font-size: 12px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .assite > p {
-    font-size: 12px;
-  }
-  .Sect1Atelier .content .tswira {
-    display: none;
-  }
-  .Sect1Atelier .btn {
-    justify-content: end;
-    height: 140px;
-    align-items: flex-end;
-    margin-right: 35px;
-  }
-  .Sect1Atelier .btn .btn1 {
-    font-size: 12px;
-    width: 180px;
+   .Sect1 .content .titpar h3 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 16px;
+    line-height: 22px;
   }
   .Sect1 .content .titpar p {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 16%;
+    text-align: justify;
   }
+  .Sect1 .content .tswira {
+    width: 50%;
+  }
+  .Sect1 .content .tswira img {
+    width: 75%;
+  }
+  .Sect1 .btn {
+    display: flex;
+    justify-content: start;
+    margin: 8% 0 0 5% ;
+  }
+  .Sect1 .btn .btn1 {
+    width: 23%;
+    height: 24px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  /* End Section 1 */
+  /* Start Section 2 */
+  .Sect2 {
+    height: 100vh;
+  }
+  .Sect2 h3 {
+    font-size: 24px;
+  }
+  .Sect2 .artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .Sect2 .artist .art_producter {
+    width: 45%;
+    height: 45%;
+  }
+  .Sect2 .artist .art_producter img {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 75%;
+    height: 40%;
+  }
+  .Sect2 .artist .art_producter h5 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a46666;
+  }
+  .Sect2 .artist .art_producter p {
+    color: #000;
+    font-size: 12px;
+    line-height: 10px;
+  }
+  /* End Section 2 */
+  /* Start Section 3 */
+  .Sect3 {
+    height: 100vh;
+  }
+  .Sect3 h3 {
+    font-size: 24px;
+  }
+  .Sect3 .grid-product {
+    display: flex;
+    flex-direction: column;
+  }
+  /* End Section 3*/
+  /* Start Section 4 */
+  .Sect4 {
+    height: 50vh;
+  }
+  .Sect4 h3 {
+    font-size: 24px;
+  }
+  .Sect4 .contentAtelier {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .Sect4 .contentAtelier .titparAtelier {
+    width: 50%;
+  }
+   .Sect4 .contentAtelier .titparAtelier h4 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 22px;
+    line-height: 22px;
+    overflow: hidden;
+  }
+  .Sect4 .contentAtelier .titparAtelier p {
+    font-size: 8px;
+    line-height: 15px;
+    margin-top: 8%;
+    text-align: justify;
+  }
+  .Sect4 .contentAtelier .tswira {
+    width: 50%;
+  }
+  .Sect4 .contentAtelier .tswira img {
+    width: 100%;
+  }
+  .Sect4 .btn {
+    display: flex;
+    justify-content: start;
+    margin: 8% 0 0 5% ;
+  }
+  .Sect4 .btn .btn1 {
+    width: 25%;
+    height: 32px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  /* End Section 4 */
+  /* Start Section 5 */
+  .section {
+    width: 80%;
+  }
+  .section h3 {
+    font-size: 24px;
+  }
+  /* End Section 5 */
   .foot {
     height: 100vh;
     display: flex;
@@ -706,25 +801,7 @@ form .password i {
     justify-content: space-around;
   }
 }
-
-/* Small Devices (Tablets) */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-}
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}
+/*
 @media only screen and (max-width: 767px) {
   .hamburger {
     display: block;
@@ -757,7 +834,7 @@ form .password i {
   }
   .nav-bar ul {
     display: block;
-    /* width: fit-content; */
+    /* width: fit-content; 
     margin: 0px auto 0 auto;
     text-align: center;
     transition: 0.5s;
@@ -803,7 +880,7 @@ form .password i {
     justify-content: start;
     padding: 50px 75px;
   }
-  /*-- Media Query Second Section ----*/
+  /*-- Media Query Second Section ----/
   .Sect2 {
     height: 120vh;
     background: #cee7e6;
@@ -832,13 +909,13 @@ form .password i {
     margin: 15px;
     border-radius: 8px;
   }
-  /*-- End Media Query Second Section --*/
-  /*-- Media Query Third Section --*/
+  /*-- End Media Query Second Section --/
+  /*-- Media Query Third Section --/
   .Sect3 {
     height: 257vh;
   }
-  /*-- End Media Query Third Section --*/
-  /*-- Media Query fourth Section --*/
+  /*-- End Media Query Third Section --/
+  /*-- Media Query fourth Section --/
   .Sect4 {
     margin-top: 10%;
     height: 80vh;
@@ -886,9 +963,21 @@ form .password i {
     align-items: center;
     justify-content: space-around;
   }
-
-  /*-- Media Query fourth Section --*/
+}*/
+/* Small Devices (Tablets) */
+/* @media only screen and (min-width: 576px) and (max-width: 767px) {
+} */
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+ /*-- Media Query fourth Section --*/
 
   /*-- End Media Query Second Section ----*/
-}
 /*------ End Media Query fr ------*/
