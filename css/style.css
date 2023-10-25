@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
+  overflow: hidden;
 }
 header .image img {
   width: 40%;
@@ -582,314 +583,16 @@ form select:focus {
 /*---- End form ----*/
 
 /* -- Media Query First Section ----*/
-
-@media only screen and (max-width: 575px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #000000;
-    margin: 6px 0;
-  }
-  .nav-bar {
-    height: 0;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: #f6f3ee;
-    transition: 0.25s;
-    overflow: hidden;
-  }
-  .nav-bar.active {
-    height: 50%;
-    width: 100%;
-    z-index: 1;
-  }
-  nav ul .active {
-    height: 450px;
-  }
-  .nav-bar ul {
-    display: block;
-    /* width: fit-content; */
-    margin: 0px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  .nav-bar.active ul {
-    opacity: 1;
-  }
-  /* Start Section 1 */
-  .Sect1 {
-    height: 50vh;
-  }
-  .Sect1 .content {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 24px;
-    width: 100%;
-  }
-  .Sect1 .content .titpar {
-    width: 50%;
-  }
-  .Sect1 .content .titpar h3 {
-    position: relative;
-    top: 1.8rem;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .Sect1 .content .titpar p {
-    font-size: 10px;
-    line-height: 15px;
-    margin-top: 16%;
-    text-align: justify;
-  }
-  .Sect1 .content .tswira {
-    width: 50%;
-  }
-  .Sect1 .content .tswira img {
-    width: 75%;
-  }
-  .Sect1 .btn {
-    display: flex;
-    justify-content: start;
-    margin: 8% 0 0 5%;
-  }
-  .Sect1 .btn .btn1 {
-    width:39%;
-    height: 24px;
-    font-size: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* End Section 1 */
-  /* Start Section 2 */
-  .Sect2 {
-    height: 100vh;
-  }
-  .Sect2 h3 {
-    font-size: 24px;
-  }
-  .Sect2 .artist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-  }
-  .Sect2 .artist .art_producter {
-    width: 45%;
-    height: 45%;
-  }
-  .Sect2 .artist .art_producter img {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    width: 75%;
-    height: 40%;
-  }
-  .Sect2 .artist .art_producter h5 {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: #a46666;
-  }
-  .Sect2 .artist .art_producter p {
-    color: #000;
-    font-size: 10px;
-    line-height: 10px;
-    text-align: start;
-    padding: 5% 8%;
-  }
-  /* End Section 2 */
-  /* Start Section 3 */
-  .Sect3 {
-    height: 100vh;
-  }
-  .Sect3 h3 {
-    font-size: 24px;
-  }
-  .Sect3 .grid-product {
-    display: flex;
-    flex-direction: column;
-  }
-  /* End Section 3*/
-  /* Start Section 4 */
-  .Sect4 {
-    height: 50vh;
-  }
-  .Sect4 h3 {
-    font-size: 24px;
-  }
-  .Sect4 .contentAtelier {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 24px;
-    width: 100%;
-  }
-  .Sect4 .contentAtelier .titparAtelier {
-    width: 50%;
-  }
-  .Sect4 .contentAtelier .titparAtelier h4 {
-    position: relative;
-    top: 1.8rem;
-    font-size: 22px;
-    line-height: 22px;
-    overflow: hidden;
-  }
-  .Sect4 .contentAtelier .titparAtelier p {
-    font-size: 8px;
-    line-height: 15px;
-    margin-top: 8%;
-    text-align: justify;
-  }
-  .Sect4 .contentAtelier .tswira {
-    width: 50%;
-  }
-  .Sect4 .contentAtelier .tswira img {
-    width: 100%;
-  }
-  .Sect4 .btn {
-    display: flex;
-    justify-content: start;
-    margin: 8% 0 0 5%;
-  }
-  .Sect4 .btn .btn1 {
-    width: 25%;
-    height: 32px;
-    font-size: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* End Section 4 */
-  /* Start Section 5 */
-  .section {
-    width: 80%;
-  }
-  .section h3 {
-    font-size: 24px;
-  }
-  /* End Section 5 */
-  /* Start page Galerie*/
-  .Sect1Galerie {
-    background-image: url(../images/wall.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-  }
-  .Sect1Galerie h3 {
-    position: relative;
-    top: 38%;
-    font-size: 64px;
-  }
-  .Sect2Galerie h3 {
-    font-size: 32px;
-  }
-  .Sect2Galerie .grid-product {
-    display: flex;
-    flex-direction: column;
-  }
-  .videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .videos .video1, .videos .video2 {
-    width: 360;
-    height: 315;
-  }
-  /* End page Galerie */
-  /* Start page Atelier */
-  .Sect1Atelier {
-    height: 5%;
-  }
-  .Sect1Atelier .content {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 24px;
-    width: 100%;
-  }
-  .Sect1Atelier .content .titpar {
-    width: 50%;
-  }
-  .Sect1Atelier .content .titpar h3 {
-    position: relative;
-    top: 1.8rem;
-    font-size: 24px;
-    line-height: 24px;
-  }
-  .Sect1Atelier .content .titpar p {
-    font-size: 10px;
-    line-height: 15px;
-    margin-top: 16px;
-    text-align: justify;
-  }
-  .Sect1Atelier .content .tswira {
-    width: 50%;
-  }
-  .Sect1Atelier .content .tswira img {
-    width: 100%;
-  }
-  .Sect1Atelier .content .titpar .dateHeure {
-    width: 100vw;
-    display: flex;
-    gap: 0px;
-    justify-content: space-between;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .date h4{
-    font-size: 10px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .date p{
-    font-size: 6px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .heure h4{
-    font-size: 10px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .heure p{
-    font-size: 6px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .assite h4{
-    font-size: 10px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .assite p{
-    font-size: 6px;
-  }
-  .Sect1Atelier .content .titpar .dateHeure .sep{
-    border: 1px solid #99c0dc;
-    height: 100%;
-  }
-
-  .Sect1Atelier .btn {
-    display: flex;
-    justify-content: end;
-    margin: 4% 4% 6% 0%;
-  }
-  .Sect1Atelier .btn .btn1 {
-    width: 23%;
-    height: 24px;
-    font-size: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* End page Atelier */
-  .foot {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-around;
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
   }
 }
-
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -1147,19 +850,319 @@ form select:focus {
     justify-content: space-around;
   }
 }
+@media only screen and (max-width: 575px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #f6f3ee;
+    transition: 0.25s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+  }
+  nav ul .active {
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    /* width: fit-content; */
+    margin: 0px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  /* Start Section 1 */
+  .Sect1 {
+    height: 50vh;
+    overflow: hidden;
+  }
+  .Sect1 .content {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .Sect1 .content .titpar {
+    width: 50%;
+  }
+  .Sect1 .content .titpar h3 {
+   position: relative;
+    top: 8.8rem;
+    font-size: 16px;
+    line-height: 22px;
+    width: 70%;
+  }
+  .Sect1 .content .titpar p {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 16%;
+    text-align: justify;
+  }
+  .Sect1 .content .tswira {
+    width: 50%;
+  }
+  .Sect1 .content .tswira img {
+    width: 75%;
+  }
+  .Sect1 .btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 15%;
+  }
+  .Sect1 .btn .btn1 {
+    width:39%;
+    height: 24px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* End Section 1 */
+  /* Start Section 2 */
+  .Sect2 {
+    height: 100vh;
+  }
+  .Sect2 h3 {
+    font-size: 24px;
+  }
+  .Sect2 .artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .Sect2 .artist .art_producter {
+    width: 45%;
+    height: 45%;
+  }
+  .Sect2 .artist .art_producter img {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 75%;
+    height: 40%;
+  }
+  .Sect2 .artist .art_producter h5 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a46666;
+  }
+  .Sect2 .artist .art_producter p {
+    color: #000;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: start;
+    padding: 5% 8%;
+  }
+  /* End Section 2 */
+  /* Start Section 3 */
+  .Sect3 {
+    height: 100vh;
+  }
+  .Sect3 h3 {
+    font-size: 24px;
+  }
+  .Sect3 .grid-product {
+    display: flex;
+    flex-direction: column;
+  }
+  /* End Section 3*/
+  /* Start Section 4 */
+  .Sect4 {
+    height: 50vh;
+  }
+  .Sect4 h3 {
+    font-size: 24px;
+  }
+  .Sect4 .contentAtelier {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .Sect4 .contentAtelier .titparAtelier {
+    width: 50%;
+  }
+  .Sect4 .contentAtelier .titparAtelier h4 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 22px;
+    line-height: 22px;
+    overflow: hidden;
+  }
+  .Sect4 .contentAtelier .titparAtelier p {
+    font-size: 8px;
+    line-height: 15px;
+    margin-top: 8%;
+    text-align: justify;
+  }
+  .Sect4 .contentAtelier .tswira {
+    width: 50%;
+  }
+  .Sect4 .contentAtelier .tswira img {
+    width: 100%;
+  }
+  .Sect4 .btn {
+    display: flex;
+    justify-content: start;
+    margin: 8% 0 0 5%;
+  }
+  .Sect4 .btn .btn1 {
+    width: 25%;
+    height: 32px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* End Section 4 */
+  /* Start Section 5 */
+  .section {
+    width: 80%;
+  }
+  .section h3 {
+    font-size: 24px;
+  }
+  /* End Section 5 */
+  /* Start page Galerie*/
+  .Sect1Galerie {
+    background-image: url(../images/wall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  .Sect1Galerie h3 {
+    position: relative;
+    top: 38%;
+    font-size: 64px;
+  }
+  .Sect2Galerie h3 {
+    font-size: 32px;
+  }
+  .Sect2Galerie .grid-product {
+    display: flex;
+    flex-direction: column;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos .video1, .videos .video2 {
+    width: 360;
+    height: 315;
+  }
+  /* End page Galerie */
+  /* Start page Atelier */
+  .Sect1Atelier {
+    height: 5%;
+  }
+  .Sect1Atelier .content {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar {
+    width: 50%;
+  }
+  .Sect1Atelier .content .titpar h3 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .Sect1Atelier .content .titpar p {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 16px;
+    text-align: justify;
+  }
+  .Sect1Atelier .content .tswira {
+    width: 50%;
+  }
+  .Sect1Atelier .content .tswira img {
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar .dateHeure {
+    width: 100vw;
+    display: flex;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date h4{
+    font-size: 10px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date p{
+    font-size: 6px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure h4{
+    font-size: 10px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure p{
+    font-size: 6px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite h4{
+    font-size: 10px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite p{
+    font-size: 6px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .sep{
+    border: 1px solid #99c0dc;
+    height: 100%;
+  }
+
+  .Sect1Atelier .btn {
+    display: flex;
+    justify-content: end;
+    margin: 4% 4% 6% 0%;
+  }
+  .Sect1Atelier .btn .btn1 {
+    width: 23%;
+    height: 24px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* End page Atelier */
+  .foot {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
 /* Small Devices (Tablets) */
 /* @media only screen and (min-width: 576px) and (max-width: 767px) {
 } */
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}
 /*-- Media Query fourth Section --*/
 
 /*-- End Media Query Second Section ----*/
