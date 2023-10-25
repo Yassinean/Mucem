@@ -864,8 +864,8 @@ form select:focus {
 
   .Sect1Atelier .btn {
     display: flex;
-    justify-content: start;
-    margin: 4% 0 6% 4%;
+    justify-content: end;
+    margin: 4% 4% 6% 0%;
   }
   .Sect1Atelier .btn .btn1 {
     width: 23%;
