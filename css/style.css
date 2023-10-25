@@ -834,9 +834,10 @@ form select:focus {
     width: 100%;
   }
   .Sect1Atelier .content .titpar .dateHeure {
-    width: auto;
+    width: 100vw;
     display: flex;
-    gap: 17px;
+    gap: 0px;
+    justify-content: space-between;
   }
   .Sect1Atelier .content .titpar .dateHeure .date h4{
     font-size: 12px;
