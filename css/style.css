@@ -1027,10 +1027,10 @@ form select:focus {
   .Sect4 .btn {
     display: flex;
     justify-content: start;
-    margin: 8% 0 0 5%;
+    margin: 0% 0 0 5%;
   }
   .Sect4 .btn .btn1 {
-    width: 25%;
+    width: 50%;
     height: 32px;
     font-size: 8px;
     display: flex;
