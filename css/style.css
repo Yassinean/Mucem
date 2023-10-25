@@ -840,22 +840,22 @@ form select:focus {
     justify-content: space-between;
   }
   .Sect1Atelier .content .titpar .dateHeure .date h4{
-    font-size: 12px;
+    font-size: 10px;
   }
   .Sect1Atelier .content .titpar .dateHeure .date p{
-    font-size: 8px;
+    font-size: 6px;
   }
   .Sect1Atelier .content .titpar .dateHeure .heure h4{
-    font-size: 12px;
+    font-size: 10px;
   }
   .Sect1Atelier .content .titpar .dateHeure .heure p{
-    font-size: 8px;
+    font-size: 6px;
   }
   .Sect1Atelier .content .titpar .dateHeure .assite h4{
-    font-size: 12px;
+    font-size: 10px;
   }
   .Sect1Atelier .content .titpar .dateHeure .assite p{
-    font-size: 8px;
+    font-size: 6px;
   }
   .Sect1Atelier .content .titpar .dateHeure .sep{
     border: 1px solid #99c0dc;
