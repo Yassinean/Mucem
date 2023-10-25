@@ -160,11 +160,15 @@ header .image img {
   margin: 20px;
 }
 
+.Sect2 .artist .art_producter h5 {
+  color: #914040;
+  text-align: center;
+}
 .Sect2 .artist .art_producter p {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  color: #a46666;
+  color: #000;
 }
 
 /*---- End Second Section ----*/
@@ -657,7 +661,7 @@ form select:focus {
     margin: 8% 0 0 5%;
   }
   .Sect1 .btn .btn1 {
-    width: 23%;
+    width:39%;
     height: 24px;
     font-size: 8px;
     display: flex;
