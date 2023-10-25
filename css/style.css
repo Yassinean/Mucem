@@ -885,8 +885,8 @@ form select:focus {
     justify-content: space-around;
   }
 }
-/*
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -918,7 +918,7 @@ form select:focus {
   }
   .nav-bar ul {
     display: block;
-    /* width: fit-content; 
+    /* width: fit-content; */
     margin: 0px auto 0 auto;
     text-align: center;
     transition: 0.5s;
@@ -928,26 +928,29 @@ form select:focus {
     opacity: 1;
   }
   .Sect1 {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 50vh;
   }
   .Sect1 .content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
+  .Sect1 .content .tswira {
+    display: flex;
+    align-items: end;
+  }
   .Sect1 .content img {
     width: 211px;
-    padding-top: 57%;
+    padding-top: 50%;
+  }
+  .Sect1 .content .titpar {
+    overflow: hidden;
   }
   .Sect1 .content .titpar h3 {
     position: relative;
-    top: 3.3rem;
+    top: 5.3rem;
     width: 256px;
-    height: 102px;
+    height: 147px;
     font-size: 22px;
     line-height: 32px;
   }
@@ -955,7 +958,7 @@ form select:focus {
     position: relative;
     top: 4rem;
     width: 256px;
-    height: 94px;
+    height: 157px;
     text-align: justify;
     font-size: 12px;
   }
@@ -964,24 +967,27 @@ form select:focus {
     justify-content: start;
     padding: 50px 75px;
   }
-  /*-- Media Query Second Section ----/
+  /*-- Media Query Second Section ----*/
   .Sect2 {
-    height: 120vh;
+    height: 100vh;
     background: #cee7e6;
-    width: 100%;
   }
   .Sect2 .artist .art_producter {
     background-color: #fff;
-    width: 225px;
-    height: 270px;
-    gap: 50px;
     border-radius: 8px;
   }
-  .Sect2 .artist .art_producter p {
+  .Sect2 .artist .art_producter h5 {
+    color: #914040;
     text-align: center;
     font-size: 16px;
+  }
+  
+  .Sect2 .artist .art_producter p {
+    text-align: center;
+    padding: 5%;
+    font-size: 12px;
     font-weight: 500;
-    color: #a46666;
+    color: #000;
   }
   .Sect2 .artist .art_producter img {
     max-width: 100%;
@@ -993,24 +999,24 @@ form select:focus {
     margin: 15px;
     border-radius: 8px;
   }
-  /*-- End Media Query Second Section --/
-  /*-- Media Query Third Section --/
+  /*-- End Media Query Second Section --*/
+  /*-- Media Query Third Section --*/
   .Sect3 {
-    height: 257vh;
+    height: 100vh;
   }
-  /*-- End Media Query Third Section --/
-  /*-- Media Query fourth Section --/
+  /*-- End Media Query Third Section --*/
+  /*-- Media Query fourth Section --*/
   .Sect4 {
-    margin-top: 10%;
-    height: 80vh;
+    /* margin-top: 10%; */
+    height: 50vh;
   }
   .Sect4 .contentAtelier {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  .Sect4 .contentAtelier .tswira img {
-    width: 300px;
+  .Sect4 .contentAtelier .titparAtelier{
+    width: 60%;
   }
   .Sect4 .contentAtelier .titparAtelier h4 {
     position: relative;
@@ -1026,6 +1032,15 @@ form select:focus {
     text-align: justify;
     font-size: 12px;
   }
+  .Sect4 .contentAtelier .tswira {
+    width: 30%;
+  }
+  .Sect4 .contentAtelier .tswira img {
+    width: 100%;
+  }
+  .section {
+    height: 50vh;
+  }
   .Sect1Galerie h3 {
     font-size: 70px;
     position: relative;
@@ -1035,10 +1050,90 @@ form select:focus {
   }
   .videos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 50px 20px;
   }
+  /* Start page Atelier */
+  .Sect1Atelier {
+    height: 48vh;
+    overflow: hidden;
+  }
+  .Sect1Atelier .content {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar {
+    width: 50%;
+  }
+  .Sect1Atelier .content .titpar h3 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .Sect1Atelier .content .titpar p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    text-align: justify;
+    color: #914040;
+  }
+  .Sect1Atelier .content .tswira {
+    width: 50%;
+  }
+  .Sect1Atelier .content .tswira img {
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar .dateHeure {
+    width: 50vw;
+    display: flex;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date h4{
+    font-size: 16px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date p{
+    font-size: 12px;
+    color: #000;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure h4{
+    font-size: 16px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure p{
+    font-size: 12px;
+    color: #000;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite h4{
+    font-size: 16px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite p{
+    font-size: 12px;
+    color: #000;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .sep{
+    border: 1px solid #99c0dc;
+    height: 100%;
+  }
+
+  .Sect1Atelier .btn {
+    display: flex;
+    justify-content: end;
+    margin: 0% 4% 0% 0%;
+  }
+  .Sect1Atelier .btn .btn1 {
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  /* End page Atelier */
   .foot {
     height: 100vh;
     display: flex;
@@ -1047,7 +1142,7 @@ form select:focus {
     align-items: center;
     justify-content: space-around;
   }
-}*/
+}
 /* Small Devices (Tablets) */
 /* @media only screen and (min-width: 576px) and (max-width: 767px) {
 } */

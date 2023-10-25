@@ -72,11 +72,15 @@
     </div>
     <section class="formulaire">
       <h2>Réserver Vos Tickets</h2>
-      <form id="myForm">
-        Votre Nom et Prénom: <input type="text" id="fullName" required /><br /><br />
-        Votre Numéro de Téléphone: <input type="text" id="phone" required /><br /><br />
-        Votre Adresse Email: <input type="text" id="email" required /><br /><br />
-        Votre CIN (Carte National): <input type="text" id="cin" required /><br /><br />
+      <form id="myForm" action="">
+        Votre Nom et Prénom:
+        <input type="text" id="fullName" required /><br /><br />
+        Votre Numéro de Téléphone:
+        <input type="text" id="phone" required /><br /><br />
+        Votre Adresse Email:
+        <input type="text" id="email" required /><br /><br />
+        Votre CIN (Carte National):
+        <input type="text" id="cin" required /><br /><br />
         <div class="form-group submit-btn">
           <input type="submit" value="Submit" />
         </div>
@@ -110,46 +114,48 @@
     </footer>
 
     <script src="js/burger.js"></script>
-     <script>
-    const form = document.getElementById("myForm");
-    form.addEventListener("submit", function(event) {
-      const fullName = document.getElementById("fullName").value;
-      const phone = document.getElementById("phone").value;
-      const email = document.getElementById("email").value;
-      const cin = document.getElementById("cin").value;
+    <script>
+      const form = document.getElementById("myForm");
+      form.addEventListener("submit", function (event) {
+        const fullName = document.getElementById("fullName").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const cin = document.getElementById("cin").value;
 
-      // Vérification du modèle du nom complet
-      const fullNamePattern = /^[A-Za-z\s]+$/;
-      if (!fullNamePattern.test(fullName)) {
-        alert("Veuillez entrer un nom complet valide.");
-        event.preventDefault();
-        return;
-      }
+        // Vérification du modèle du nom complet
+        const fullNamePattern = /^[A-Za-z\s]+$/;
+        if (!fullNamePattern.test(fullName)) {
+          alert("Veuillez entrer un nom complet valide.");
+          event.preventDefault();
+          return;
+        }
 
-      // Vérification du modèle du téléphone
-      const phonePattern = /^\d{10}$/;
-      if (!phonePattern.test(phone)) {
-        alert("Veuillez entrer un numéro de téléphone valide (10 chiffres).");
-        event.preventDefault();
-        return;
-      }
+        // Vérification du modèle du téléphone
+        const phonePattern = /^\d{10}$/;
+        if (!phonePattern.test(phone)) {
+          alert("Veuillez entrer un numéro de téléphone valide (10 chiffres).");
+          event.preventDefault();
+          return;
+        }
 
-      // Vérification du modèle de l'e-mail
-      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-      if (!emailPattern.test(email)) {
-        alert("Veuillez entrer une adresse e-mail valide.");
-        event.preventDefault();
-        return;
-      }
+        // Vérification du modèle de l'e-mail
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailPattern.test(email)) {
+          alert("Veuillez entrer une adresse e-mail valide.");
+          event.preventDefault();
+          return;
+        }
 
-      // Vérification du modèle du CIN
-      const cinPattern = /^[A-Za-z]{2}\d{6}$/;
-      if (!cinPattern.test(cin)) {
-        alert("Veuillez entrer un numéro CIN valide (ex. AB123456 ou ab123456).");
-        event.preventDefault();
-        return;
-      }
-    });
-  </script>
+        // Vérification du modèle du CIN
+        const cinPattern = /^[A-Za-z]{1,2}\d{6}$/;
+        if (!cinPattern.test(cin)) {
+          alert(
+            "Veuillez entrer un numéro CIN valide (ex. AB123456 ou ab123456)."
+          );
+          event.preventDefault();
+          return;
+        }
+      });
+    </script>
   </body>
 </html>
