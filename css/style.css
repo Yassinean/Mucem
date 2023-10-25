@@ -553,29 +553,7 @@ form input:focus,
 form select:focus {
   border-color: #9a9a9a;
 }
-form input.error,
-form select.error {
-  border-color: #f91919;
-  background: #f9f0f1;
-}
-form small {
-  font-size: 14px;
-  margin-top: 5px;
-  display: block;
-  color: #f91919;
-}
-form .password i {
-  position: absolute;
-  right: 0px;
-  height: 45px;
-  top: 28px;
-  font-size: 13px;
-  line-height: 45px;
-  width: 45px;
-  cursor: pointer;
-  color: #939393;
-  text-align: center;
-}
+
 .submit-btn {
   margin-top: 30px;
 }
@@ -655,7 +633,7 @@ form .password i {
   .Sect1 .content .titpar {
     width: 50%;
   }
-   .Sect1 .content .titpar h3 {
+  .Sect1 .content .titpar h3 {
     position: relative;
     top: 1.8rem;
     font-size: 16px;
@@ -676,7 +654,7 @@ form .password i {
   .Sect1 .btn {
     display: flex;
     justify-content: start;
-    margin: 8% 0 0 5% ;
+    margin: 8% 0 0 5%;
   }
   .Sect1 .btn .btn1 {
     width: 23%;
@@ -685,7 +663,7 @@ form .password i {
     display: flex;
     justify-content: center;
     align-items: center;
-  }  
+  }
   /* End Section 1 */
   /* Start Section 2 */
   .Sect2 {
@@ -719,8 +697,10 @@ form .password i {
   }
   .Sect2 .artist .art_producter p {
     color: #000;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 10px;
+    text-align: start;
+    padding: 5% 8%;
   }
   /* End Section 2 */
   /* Start Section 3 */
@@ -751,7 +731,7 @@ form .password i {
   .Sect4 .contentAtelier .titparAtelier {
     width: 50%;
   }
-   .Sect4 .contentAtelier .titparAtelier h4 {
+  .Sect4 .contentAtelier .titparAtelier h4 {
     position: relative;
     top: 1.8rem;
     font-size: 22px;
@@ -773,7 +753,7 @@ form .password i {
   .Sect4 .btn {
     display: flex;
     justify-content: start;
-    margin: 8% 0 0 5% ;
+    margin: 8% 0 0 5%;
   }
   .Sect4 .btn .btn1 {
     width: 25%;
@@ -782,7 +762,7 @@ form .password i {
     display: flex;
     justify-content: center;
     align-items: center;
-  }  
+  }
   /* End Section 4 */
   /* Start Section 5 */
   .section {
@@ -792,6 +772,109 @@ form .password i {
     font-size: 24px;
   }
   /* End Section 5 */
+  /* Start page Galerie*/
+  .Sect1Galerie {
+    background-image: url(../images/wall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  .Sect1Galerie h3 {
+    position: relative;
+    top: 38%;
+    font-size: 64px;
+  }
+  .Sect2Galerie h3 {
+    font-size: 32px;
+  }
+  .Sect2Galerie .grid-product {
+    display: flex;
+    flex-direction: column;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos .video1, .videos .video2 {
+    width: 360;
+    height: 315;
+  }
+  /* End page Galerie */
+  /* Start page Atelier */
+  .Sect1Atelier {
+    height: 5%;
+  }
+  .Sect1Atelier .content {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar {
+    width: 50%;
+  }
+  .Sect1Atelier .content .titpar h3 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .Sect1Atelier .content .titpar p {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 16px;
+    text-align: justify;
+  }
+  .Sect1Atelier .content .tswira {
+    width: 50%;
+  }
+  .Sect1Atelier .content .tswira img {
+    width: 100%;
+  }
+  .Sect1Atelier .content .titpar .dateHeure {
+    width: auto;
+    display: flex;
+    gap: 17px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date h4{
+    font-size: 12px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .date p{
+    font-size: 8px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure h4{
+    font-size: 12px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .heure p{
+    font-size: 8px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite h4{
+    font-size: 12px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .assite p{
+    font-size: 8px;
+  }
+  .Sect1Atelier .content .titpar .dateHeure .sep{
+    border: 1px solid #99c0dc;
+    height: 100%;
+  }
+
+  .Sect1Atelier .btn {
+    display: flex;
+    justify-content: start;
+    margin: 4% 0 6% 4%;
+  }
+  .Sect1Atelier .btn .btn1 {
+    width: 23%;
+    height: 24px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* End page Atelier */
   .foot {
     height: 100vh;
     display: flex;
@@ -977,7 +1060,7 @@ form .password i {
     padding: 0 30px;
   }
 }
- /*-- Media Query fourth Section --*/
+/*-- Media Query fourth Section --*/
 
-  /*-- End Media Query Second Section ----*/
+/*-- End Media Query Second Section ----*/
 /*------ End Media Query fr ------*/
