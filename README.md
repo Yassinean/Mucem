@@ -4,8 +4,11 @@ Bienvenue sur le site web "Mucem" dédié à l'art de la poterie, une tradition 
 ### Les mockups
 #### Version Desktop
 
+![Uploading Accueil.png…]()
 
 ![Galerie](https://github.com/Yassinean/Mucem/assets/144820376/9494404d-f47e-485d-b8ed-ecf5f4fd61b9)
+
+![Uploading Atelier.png…]()
 
 
 #### Version Mobile 
