@@ -298,6 +298,12 @@ header .image img {
   cursor: pointer;
 }
 
+.section .qi {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+} 
+
 .question {
   display: flex;
   justify-content: center;
@@ -1044,6 +1050,9 @@ form select:focus {
   }
   .section h3 {
     font-size: 24px;
+  }
+  .section .qi .tswira {
+    display: none;
   }
   /* End Section 5 */
   /* Start page Galerie*/

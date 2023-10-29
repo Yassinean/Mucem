@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrousel Simple</title>
+  <style>
+    /* Styles CSS pour le carrousel */
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .slide {
+      width: 300px;
+      height: 200px;
+      transition: transform 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="slide">
+        <img src="images/AdobeStock_75495659_Preview.jpeg" alt="">
+    </div>
+    <div class="slide">
+        <img src="images/eid-coffee_187299-8575-removebg-preview-min.png" alt="">
+    </div>
+    <div class="slide">
+        <img src="images/zlayf.jpg" alt="">
+    </div>
+  </div>
+
+  <script>
+    const carousel = document.querySelector(".carousel");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const offset = -index * 300; // Largeur du slide
+      carousel.style.transform = `translateX(${offset}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex >= slides.length) {
+        currentIndex = 0;
+      }
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = slides.length - 1;
+      }
+      showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 2000); // Passage automatique des diapositives toutes les 2 secondes
+  </script>
+</body>
+</html>
