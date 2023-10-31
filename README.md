@@ -21,5 +21,4 @@ https://www.figma.com/file/LGWg4FCfEqjnVGoUzyvYBr/Mucem?type=design&node-id=0%3A
 https://trello.com/invite/b/SNdT2jrZ/ATTId37fbe66650257d70dfcaf46ac35c346506558F0/briefs
 
 ## Présentation Canva
-
-
+https://www.canva.com/design/DAFy1UzjIJs/0zxOPSqNfANEzOiOUKiAxg/view?utm_content=DAFy1UzjIJs&utm_campaign=designshare&utm_medium=link&utm_source=editor
